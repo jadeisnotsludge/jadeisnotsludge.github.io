@@ -8,73 +8,74 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<button class="tablink" onclick="openPage('PerformingGround', this, 'red')">Performing Ground</button>
-<button class="tablink" onclick="openPage('MoreThanOneLessThanTwo', this, 'green')">More than one less than two</button>
-<button class="tablink" onclick="openPage('IntimacyWithStrangers', this, 'blue')">Intimacy with strangers</button>
-<button class="tablink" onclick="openPage('BecomingFeral', this, 'orange')">Becoming feral</button>
-<button class="tablink" onclick="openPage('MoreThanHumanKin', this, 'purple')">More-than-human-kin</button>
-<button class="tablink" onclick="openPage('BeyondMachineVision', this, 'teal')">Beyond machine vision</button>
-<button class="tablink" onclick="openPage('DilutedAuthorship', this, 'pink')">Diluted authorship</button>
-<button class="tablink" onclick="openPage('StitchNBitch', this, 'brown')">Stitch 'n' bitch</button>
-
-<div id="PerformingGround" class="tabcontent">
-  <h3>Performing Ground</h3>
-  <p>Welcome to the Performing Ground page.</p>
-</div>
-
-<div id="MoreThanOneLessThanTwo" class="tabcontent">
-  <h3>More than one less than two</h3>
-  <p>Welcome to the More than one less than two page.</p>
-</div>
-
-<div id="IntimacyWithStrangers" class="tabcontent">
-  <h3>Intimacy with strangers</h3>
-  <p>Welcome to the Intimacy with strangers page.</p>
-</div>
-
-<div id="BecomingFeral" class="tabcontent">
-  <h3>Becoming feral</h3>
-  <p>Welcome to the Becoming feral page.</p>
-</div>
-
-<div id="MoreThanHumanKin" class="tabcontent">
-  <h3>More-than-human-kin</h3>
-  <p>Welcome to the More-than-human-kin page.</p>
-</div>
-
-<div id="BeyondMachineVision" class="tabcontent">
-  <h3>Beyond machine vision</h3>
-  <p>Welcome to the Beyond machine vision page.</p>
-</div>
-
-<div id="DilutedAuthorship" class="tabcontent">
-  <h3>Diluted authorship</h3>
-  <p>Welcome to the Diluted authorship page.</p>
-</div>
-
-<div id="StitchNBitch" class="tabcontent">
-  <h3>Stitch 'n' bitch</h3>
-  <p>Welcome to the Stitch 'n' bitch page.</p>
-</div>
-
-<script>
-function openPage(pageName, elmnt, color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Open the default tab
-document.getElementsByClassName("tablink")[0].click();
+    <div class="tabheader">
+        <button class="tablink" onclick="openPage('PerformingGround', this, 'red')">Performing Ground</button>
+        <button class="tablink" onclick="openPage('MoreThanOneLessThanTwo', this, 'green')">More than one less than two</button>
+        <button class="tablink" onclick="openPage('IntimacyWithStrangers', this, 'blue')">Intimacy with strangers</button>
+        <button class="tablink" onclick="openPage('BecomingFeral', this, 'orange')">Becoming feral</button>
+        <button class="tablink" onclick="openPage('MoreThanHumanKin', this, 'purple')">More-than-human-kin</button>
+        <button class="tablink" onclick="openPage('BeyondMachineVision', this, 'teal')">Beyond machine vision</button>
+        <button class="tablink" onclick="openPage('DilutedAuthorship', this, 'pink')">Diluted authorship</button>
+        <button class="tablink" onclick="openPage('StitchNBitch', this, 'brown')">Stitch 'n' bitch</button>
+      </div>
+      
+      <div id="PerformingGround" class="tabcontent">
+        <h3>Performing Ground</h3>
+        <p>Welcome to the Performing Ground page.</p>
+      </div>
+      
+      <div id="MoreThanOneLessThanTwo" class="tabcontent">
+        <h3>More than one less than two</h3>
+        <p>Welcome to the More than one less than two page.</p>
+      </div>
+      
+      <div id="IntimacyWithStrangers" class="tabcontent">
+        <h3>Intimacy with strangers</h3>
+        <p>Welcome to the Intimacy with strangers page.</p>
+      </div>
+      
+      <div id="BecomingFeral" class="tabcontent">
+        <h3>Becoming feral</h3>
+        <p>Welcome to the Becoming feral page.</p>
+      </div>
+      
+      <div id="MoreThanHumanKin" class="tabcontent">
+        <h3>More-than-human-kin</h3>
+        <p>Welcome to the More-than-human-kin page.</p>
+      </div>
+      
+      <div id="BeyondMachineVision" class="tabcontent">
+        <h3>Beyond machine vision</h3>
+        <p>Welcome to the Beyond machine vision page.</p>
+      </div>
+      
+      <div id="DilutedAuthorship" class="tabcontent">
+        <h3>Diluted authorship</h3>
+        <p>Welcome to the Diluted authorship page.</p>
+      </div>
+      
+      <div id="StitchNBitch" class="tabcontent">
+        <h3>Stitch 'n' bitch</h3>
+        <p>Welcome to the Stitch 'n' bitch page.</p>
+      </div>
+      
+      <script>
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      
+      // Open the default tab
+      document.getElementsByClassName("tablink")[0].click();
 </script>
 
 </body>
