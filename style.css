@@ -1,0 +1,39 @@
+#PerformingGround {background-color: red;}
+#MoreThanOneLessThanTwo {background-color: green;}
+#IntimacyWithStrangers {background-color: blue;}
+#BecomingFeral {background-color: orange;}
+#MoreThanHumanKin {background-color: purple;}
+#BeyondMachineVision {background-color: teal;}
+#DilutedAuthorship {background-color: pink;}
+#StitchNBitch {background-color: brown;}
+
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #dc63c4;
+  color: rgb(16, 15, 117);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #d2c656;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#London {background-color:rgb(210, 73, 178);}
+#Paris {background-color:rgb(56, 28, 140);}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:rgb(188, 127, 15);}
