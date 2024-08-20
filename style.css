@@ -12,7 +12,7 @@ html, body {
   }
   
   .tablink {
-    background-color: #555;
+    background-color: #c62dc6;
     color: white;
     border: none;
     outline: none;
@@ -20,26 +20,26 @@ html, body {
     padding: 14px 16px;
     font-size: 17px;
     flex: 1;
-    text-align: center;
+    text-align: left;
   }
   
   .tablink:hover {
-    background-color: #777;
+    background-color: #c62da2;
   }
   
   .tabcontent {
     color: white;
     display: none;
-    text-align: center;
+    text-align: left;
     flex-grow: 1;
     padding: 20px;
     box-sizing: border-box;
   }
   
-  #PerformingGround {background-color: red;}
-  #MoreThanOneLessThanTwo {background-color: green;}
+  #PerformingGround {background-color: rgb(174, 54, 134);}
+  #MoreThanOneLessThanTwo {background-color: rgb(38, 193, 38);}
   #IntimacyWithStrangers {background-color: blue;}
-  #BecomingFeral {background-color: orange;}
+  #BecomingFeral {background-color: rgb(202, 171, 114);}
   #MoreThanHumanKin {background-color: purple;}
   #BeyondMachineVision {background-color: teal;}
   #DilutedAuthorship {background-color: pink;}
